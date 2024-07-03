@@ -1,0 +1,4 @@
+login: enzo,1987
+Nome: mel, Cor: preto, Idade: 5, Peso: 4
+Nome: mel, Cor: preto, Idade: 4, Peso: 5
+Nome: tom, Cor: branco, Idade: 10, Peso: 8
