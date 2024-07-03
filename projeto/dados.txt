@@ -1,0 +1,6 @@
+usuario: admin,1234
+usuario: user2,5678
+usuario: enzo,1987
+tarefa: Estudar Python
+tarefa: Escrever Relatório
+tarefa: trabalhar
