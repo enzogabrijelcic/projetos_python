@@ -19,7 +19,7 @@ scrollbar = tk.Scrollbar(frame, orient="vertical", command=listbox.yview)
 scrollbar.pack(side="right", fill="y")
 
 # Configurar o Listbox para usar a Scrollbar
-listbox.config(yscrollcommand=scrollbar.set)
+listbox.configure(yscrollcommand=scrollbar.set)
 
 # Adicionar itens ao Listbox
 for i in range(100):
