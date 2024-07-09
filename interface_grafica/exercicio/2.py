@@ -10,7 +10,7 @@ class Num_click:
         self.root.geometry('300x100')
         self.contagem = 0
         
-        self.label_contagem=tk.Label(root, text='numero de cliques: 0',)
+        self.label_contagem=tk.Label(root, text='Numero de cliques: 0',)
         self.label_contagem.pack()
         
         self.botao_click = tk.Button(root, text="contagem", command=self.numero_cliques)
