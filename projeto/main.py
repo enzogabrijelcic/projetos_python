@@ -5,7 +5,7 @@ def ler_dados():
     usuarios = []
     tarefas = []
     try:
-        with open('projeto/dados.txt', 'r') as file:
+        with open('projetos_python\projeto\dados.txt', 'r') as file:
             for line in file:
                 line = line.strip()
                 if line.startswith('usuario:'):

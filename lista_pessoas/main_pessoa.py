@@ -1,11 +1,11 @@
 from pessoa import Pessoa
 
 def salva_pessoa(pessoa: Pessoa):
-    with open('pessoa.txt', 'a') as file:
+    with open('projetos_python/lista_pessoas/pessoa.txt', 'a') as file:
         file.write(f'Pessoa: nome:{pessoa.nome}, idade:{pessoa.idade}\n')
 
 def salva_lista_pessoa(lista_p: list[Pessoa]):
-    with open('pessoa.txt', 'a') as file:
+    with open('projetos_python/lista_pessoas/pessoa.txt', 'a') as file:
         for pessoa in lista_p:
             salva_pessoa(pessoa)
             
@@ -20,7 +20,7 @@ pessoa3 = Pessoa('Carlos', 30)
 def le_lista_pessoa():
     lista_p = []
     
-    with open ('pessoa.txt', 'r')as file:
+    with open ('projetos_python/lista_pessoas/pessoa.txt', 'r')as file:
         lines = file.readlines()
     for line in lines:
         if line.startswith('Pessoa: '):

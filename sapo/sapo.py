@@ -5,4 +5,4 @@ class Sapo:
         self.cor_olho = cor_olho
         
     def __repr__(self):
-        return f"Sapo: nome:{self.nome},idade:{self.idade},cord_olho:{self.cor_olho}"
+        return f"Sapo: nome:{self.nome},idade:{self.idade},cor_olho:{self.cor_olho}"

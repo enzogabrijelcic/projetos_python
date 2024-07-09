@@ -1,7 +1,7 @@
 from sapo import Sapo
 
 def le_sapo():
-    with open ('sapo.txt', 'r')as file:
+    with open ('projetos_python\sapo\sapo.txt', 'r')as file:
         lines = file.readlines()
         for line in lines:
             if line.startswith('Sapo: '):
