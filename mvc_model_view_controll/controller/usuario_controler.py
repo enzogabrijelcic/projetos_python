@@ -1,7 +1,9 @@
 import tkinter as tk
+from view.usuario_view import UsuarioView
+from model.usuario_model import *
 
 class UsuarioController:
-    def __init__(self, view, model):
+    def __init__(self, view:UsuarioView, model:UsuarioModel):
         self.view = view
         self.model = model
         self.view.adicionar_button.config(command=self.adicionar_usuario)
@@ -12,9 +14,10 @@ class UsuarioController:
         idade = self.view.get_idade()
         if nome and idade.isdigit():
             self.model.inserir_usuario(nome, int(idade))
-            self.view.adicionar_usuario_lista((None, nome, idade))
             self.view.nome_entry.delete(0, tk.END)
             self.view.idade_entry.delete(0, tk.END)
+            self.view.usuarios_listbox.delete(0,tk.END)
+            self.carregar_usuarios()
         else:
             self.view.show_info()
 

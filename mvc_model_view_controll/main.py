@@ -1,7 +1,7 @@
 import tkinter as tk
-from model.usuario_m import *
-from view.usuario_v import UsuarioView
-from controller.usuario_c import UsuarioController
+from model.usuario_model import *
+from view.usuario_atualizar_view import AtualizaView
+from controller.usuario_atualizar_controller import AtualizaController
 
 if __name__ == "__main__":
     root = tk.Tk()
@@ -9,14 +9,13 @@ if __name__ == "__main__":
     root.geometry("400x300")
 
     model = UsuarioModel()
-    view = UsuarioView(root)
-    model.atualizar_nome_idade(1, 'Eduardo', 50)
+    view = AtualizaView(root)
     usuarios = model.selecionar_usuarios()
     print("Usuários na tabela:")
     for usuario in usuarios:
         print(usuario)
 
-    controller = UsuarioController(view, model)
+    controller = AtualizaController(view, model)
 
     root.mainloop()
     model.fechar_conexao()
