@@ -1,0 +1,45 @@
+.box {
+    max-width: 600px; /* Define a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário na página */
+    padding: 20px;
+    background-color: #a4a8e6;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para os rótulos e campos de entrada */
+label, input, select, textarea {
+    display: block; /* Exibe cada elemento em uma linha separada */
+    margin-bottom: 10px; /* Espaçamento inferior entre os elementos */
+    width: 100%; /* Define a largura completa dos elementos */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+/* Estilos para o botão de envio */
+input[type="submit"] {
+    width: auto; /* Largura automática conforme o texto do botão */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para a área de mensagem */
+textarea {
+    resize: vertical; /* Permite redimensionamento vertical */
+    min-height: 100px; /* Altura mínima da área de mensagem */
+}
