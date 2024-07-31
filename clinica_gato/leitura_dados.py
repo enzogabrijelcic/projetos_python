@@ -4,7 +4,7 @@ from gato import Gato
 def ler_dados():
     usuarios = []
     list_gatos = []
-    with open('dados.txt', 'r') as file:
+    with open('clinica_gato/dados.txt', 'r') as file:
         for line in file:
             line = line.strip()
             if line.startswith('login: '):

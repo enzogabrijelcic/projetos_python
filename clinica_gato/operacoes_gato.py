@@ -3,14 +3,14 @@ import leitura_dados
 
 
 def salva_lista_gatos(lista: list):
-    with open('dados.txt', 'a') as file:
+    with open('clinica_gato/dados.txt', 'a') as file:
         for gato in lista: 
             file.write(f'Gato: {gato.nome}, Cor: {gato.cor}, Idade: {gato.idade}, Peso: {gato.peso}\n')
 
 def carrega_lista_gatos():
     list_gatos = []
     try:
-        with open('dados.txt', 'r') as file:
+        with open('clinica_gato/dados.txt', 'r') as file:
             for line in file:
                 line = line.strip()
             if line.startswith('Gato:'):
