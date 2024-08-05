@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página Inicial</title>
+</head>
+<body>
+    {% if sucess_message %}
+    <p class="sucess">{{ sucess_message }}</p>
+    {% endif %}
+    <h2>Bem-vindo!</h2>
+    <p>Escolha uma opção:</p>
+    <ul>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'register' %}">Registro</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,9 @@
+create table usuarios (
+    id int(100) PRIMARY KEY AUTO_INCREMENT,
+    nome varchar(255) NOT NULL UNIQUE,
+    senha varchar(500) NOT NULL UNIQUE,
+    cpf varchar(50) NOT NULL UNIQUE,
+    email varchar (100),
+    idade int (50),
+    genero varchar(255)
+);
