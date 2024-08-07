@@ -4,6 +4,9 @@
     <title>Página Inicial</title>
 </head>
 <body>
+    {% if error_message %}<!--esse % é o django que trabalha nele-->
+    <p class="sucess">{{ error_message }}</p>
+    {% endif %}
     {% if sucess_message %}
     <p class="sucess">{{ sucess_message }}</p>
     {% endif %}
